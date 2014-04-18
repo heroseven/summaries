@@ -16,6 +16,8 @@ La cabecera de cookies que devuelve el servidor puede especificar:
 *path: define los sub directorios donde los cookies aplican.
 *secure: retorna este cookie solo si la conneción es segura.
 
+### El caché
+El cache web almacena documentos web para reducir el ancho de banda consumido. Almacena documentos que pasan por el para que de esa manera las siguientes peticiones puedan ser respondidas por el propio caché.
 
 ##Markdown
 [Doc de Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
