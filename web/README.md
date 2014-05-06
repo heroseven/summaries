@@ -17,9 +17,18 @@ un dominio: para saber que allí es valido
 expires: si se deja en blanco por defecto su duración es hasta que el usuario cierra la ventana.
 path: define los sub directorios donde los cookies aplican.
 secure: retorna este cookie solo si la conneción es segura.
-Ejemplo:
 
-* Un usuario desea crear una cuenta, luego se loguea, aquí se crea una sesión desde el servidor con sus atributos de dominio, expires, path y secure. El usuario ahora cada vez que envia peticiones al servidor lo hace influyendo el cookie que se definio en el cliente para tener autorización.
+##Una sessión
+
+cliente se loguea por ejemplo:
+
+crea sesion en el servidor idsession
+key:idsession -> valor:aleatorio
+
+el servidor crea una cookie en el cliente 
+key:idsession -> valor:aleatorio
+
+cada vez que se haga un request del cliente enviará esas cookies y si es la de la sesion del servidor se identifica. 
 
 ##El cache
 

@@ -27,4 +27,21 @@ Intrucciones que se realizan al compilar a un servlet como  lenguaje de script, 
 
 	Cuando creamos un objeto con scriptler esta disponible solo allí y depende tambien del ambito.
 
-###4. Acciones
+	Para tener disponble un lista, string lo almacenamos y lo leemos en nuestro jsp con:
+
+	<jsp:useBean id="pageBean" class="mybeans.NameBean" scope="session" />
+
+###4. Ambitos
+
+scope="session": The object is accessible from any JSP page that is sharing the same HTTP session as the JSP page that created the object. A session-scope object is stored in the implicit session object. The session scope ends when the HTTP session times out or is invalidated. 
+
+
+page
+response
+session
+out
+exception
+request
+pageContext
+application
+config
